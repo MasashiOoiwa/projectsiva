@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="insertpost.js"></script>
+		<link href="cssConsole.login.css" type="text/css" rel="stylesheet">
+
+	</head>
+	<body>
+		<form>
+		<table border="1">
+			<tr>
+				<th>勤務者ID <div class="hissu">(必須)</div></th>
+				<th>
+					<input type="text" id="emp_id" required autofocus>
+				</th>
+			</tr>
+			<tr>
+				<th>勤務者名<div class="hissu">(必須)</div></th>
+				<th>
+					<input type="text" id="emp_name" required>
+				</th>
+			</tr>
+			<tr>
+				<th>フリガナ</th>
+				<th>
+					<input type="text" id="emp_kana">
+				</th>
+			</tr>
+			<tr>
+				<th>勤務者住所<div class="hissu">(必須)</div></th>
+				<th>
+					<input type="text" id="emp_address" required>
+				</th>
+			</tr>
+			<tr>
+				<th>勤務者電話番号</th>
+				<th>
+					<input type="tel" id="emp_phone1">
+				</th>
+			</tr>
+			<tr>
+				<th>勤務者携帯番号<div class="hissu">(必須)</div></th>
+				<th>
+					<input type="tel" id="emp_phone2" required>
+				</th>
+
+			</tr>
+			<tr>
+				<th>性別<div class="hissu">(必須)</div></th>
+				<th><div id="emp_sex"></div>
+					<input type="radio" name="select"required>男
+					<input type="radio" name="select"required>女
+				</th>
+
+			</tr>
+			<tr>
+				<th>生年月日<div class="hissu">(必須)</div></th>
+				<th id="birth">
+					<input type="date" required>
+				</th>
+
+			</tr>
+			<tr>
+				<th>入社日<div class="hissu">(必須)</div></th>
+				<th>
+					<input type="date" required>
+				</th>
+			</tr>
+			<tr>
+				<th>役職<div class="hissu">(必須)</div></th>
+				<th>
+					<div id="emp_job">
+					<select name="example">
+						<option value="0">部長</option>
+						<option value="1">パート</option>
+					</select>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<th>パスワード<div class="hissu">(必須)</div></th>
+				<th>
+					<input type="password" id="emp_password" pattern="^[0-9A-Za-z]+$"　required>
+				</th>
+
+			</tr>
+			<tr>
+				<th>備考</th>
+				<th>
+					<input type="text" id="">
+				</th>
+
+			</tr>
+		</table>
+		<input type="submit">
+		</form>
+		<button id="button">ボタン</button>
+		<div id="result"></div>
+	</body>
+</html>

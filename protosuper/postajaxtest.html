@@ -1,0 +1,45 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="jquery-2.1.0.min.js"></script>
+	<script type="text/javascript" src="post.js"></script>
+
+</head>
+<body>
+	<form method="POST" id="form" action="ServletConnect">
+		<!-- <input name="test" id="test" type="textbox">
+		項目1<input name="koumoku1" id="karamu1" type="textbox">
+		項目2<input name="koumoku2" id="karamu2" type="textbox"> -->
+		<br>
+		<select id="selectq">
+			<option value="select">select</option>
+			<option value="insert">insert</option>
+			<option value="update">update</option>
+		</select>
+		<select id="selectt">
+			<option value="master">master</option>
+			<option value="サンプル2">aaa</option>
+			<option value="サンプル3">aaa</option>
+		</select>
+		<div id="check">
+			<input type="checkbox" value="itemid">itemid
+			<input type="checkbox" value="itemname">itemname
+			<input type="checkbox" value="hurigana">hurigana<br>
+			<input type="checkbox" value="jancode">jancode
+			<input type="checkbox" value="classid">classid
+			<input type="checkbox" value="siiresakiid">siiresakiid<br>
+			<input type="checkbox" value="siiretanka">仕入れ単価
+			<input type="checkbox" value="hanbaitanka">販売単価
+			<input type="checkbox" value="syotourokubi">初登録日<br>
+			<input type="checkbox" value="hanbaikigennissuu">販売期限日数
+			<input type="checkbox" value="hatubaisyuryoubi">販売終了日
+			<input type="checkbox" value="bikou">備考<br>
+		</div>
+		<div id="class">
+			
+		</div>
+	</form>
+	<button id="button" onClick="getFortuneCookie()">ボタン</button>
+	<div id="result"></div>
+</body>
+</html>
